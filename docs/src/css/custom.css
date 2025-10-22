@@ -1,0 +1,50 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  /* --- Apple Cider Orange Palette (Light Mode) --- */
+  --ifm-color-primary: #E88934; /* Base Apple Cider Orange */
+  --ifm-color-primary-dark: #D47924; /* Darker */
+  --ifm-color-primary-darker: #C77222; /* Even Darker */
+  --ifm-color-primary-darkest: #AA5A0F; /* Darkest for text/accents */
+  --ifm-color-primary-light: #F09A51; /* Lighter */
+  --ifm-color-primary-lighter: #F2A462; /* Even Lighter */
+  --ifm-color-primary-lightest: #F5C599; /* Lightest for backgrounds/hovers */
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* --prism-background-color: #f5f2f0; */
+
+  --primary-font-sans: "Inter";
+  /* --ifm-font-size-base: 1rem; */
+   
+  h1 { --ifm-h1-font-size: 2rem; }
+  h2 { --ifm-h2-font-size: 1.5rem; --ifm-h2-vertical-rhythm-top: 1.0rem; --ifm-h2-vertical-rhythm-bottom: 0.75rem; }
+  h3 { --ifm-h3-font-size: 1.3rem; }
+  h4 { --ifm-h4-font-size: 1.2rem; }
+  h5 { --ifm-h5-font-size: 1.1rem; }
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  /* --- Apple Cider Orange Palette (Dark Mode) --- */
+  /* A slightly more vibrant or lighter orange for contrast against dark backgrounds */
+  --ifm-color-primary: #c18825;
+  --ifm-color-primary-dark: #ae7a21;
+  --ifm-color-primary-darker: #a4741f;
+  --ifm-color-primary-darkest: #875f1a;
+  --ifm-color-primary-light: #d49629;
+  --ifm-color-primary-lighter: #d89b31;
+  --ifm-color-primary-lightest: #dda94e;
+
+  --ifm-background-color: #262c35;
+  --ifm-navbar-background-color: #262c35;
+  --ifm-navbar-background-color: #313846;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-code-background-color: #d61b1b;
+}
