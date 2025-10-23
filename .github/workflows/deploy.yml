@@ -36,17 +36,17 @@ jobs:
         with:
           node-version: 20 # Use a current LTS version
           cache: 'npm'
-          cache-dependency-path: 'docs-app/package-lock.json' # Adjust if using yarn/pnpm
+          cache-dependency-path: 'cider-docs/package-lock.json' # Adjust if using yarn/pnpm
 
       - name: Install Dependencies
         # Navigate to your Docusaurus folder and install
         run: npm install
-        working-directory: docs-app/
+        working-directory: cider-docs/
 
       - name: Build Docusaurus Static Site
         # Build the site into the 'build' folder
         run: npm run build
-        working-directory: docs-app/
+        working-directory: cider-docs/
 
       # ----------------------------------------------------
       # Deployment Steps using GitHub Pages Artifacts
@@ -56,10 +56,10 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Upload Artifact
-        # Uploads the built Docusaurus directory (e.g., docs-app/build)
+        # Uploads the built Docusaurus directory (e.g., cider-docs/build)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'docs-app/build' # The directory containing the static site files
+          path: 'cider-docs/build' # The directory containing the static site files
 
       - name: Deploy to GitHub Pages
         id: deployment
