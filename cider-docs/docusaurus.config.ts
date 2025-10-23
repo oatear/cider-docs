@@ -111,6 +111,11 @@ const config: Config = {
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
+          href: 'https://ko-fi.com/oatear?ref=oatear.com',
+          label: 'Donate',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/oatear/cider',
           label: 'GitHub',
           position: 'right',

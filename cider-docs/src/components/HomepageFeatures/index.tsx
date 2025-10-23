@@ -3,50 +3,77 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
+// We'll use simple icons from the PrimeIcons library, as they are likely familiar to the developer,
+// but for Docusaurus we would typically use SVG files. Since we don't have SVGs, we'll use placeholder text/emoji.
+
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  icon: string; // Using a string for icon text/emoji/class placeholder
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'HTML & CSS Templates',
+    icon: '💻',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Define your card layout with standard HTML and apply powerful, pixel-perfect styling using CSS. Say goodbye to restrictive graphical editors.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Data-Driven Design',
+    icon: '📊',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Separate design from content. Manage card data in a spreadsheet-like interface and use Handlebars to dynamically populate names, stats, and abilities on thousands of cards.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Live Preview & Visual Feedback',
+    icon: '👁️',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        See changes update instantly as you edit data or code. Design with confidence using the real-time preview and built-in Card Template Wizard.
+      </>
+    ),
+  },
+  {
+    title: 'Integrated Game Simulator',
+    icon: '🃏',
+    description: (
+      <>
+        Quickly test your game logic with the built-in simulator. Shuffle decks, draw hands, and roll dice, all before sending a single card to the printer.
+      </>
+    ),
+  },
+  {
+    title: 'Professional Exports',
+    icon: '🖨️',
+    description: (
+      <>
+        Generate print-ready PDF sheets with crop marks or export individual high-resolution PNGs. Includes specialized export options for Tabletop Simulator.
+      </>
+    ),
+  },
+  {
+    title: 'Open File Structure',
+    icon: '📁',
+    description: (
+      <>
+        Your entire project is saved as a clean folder of human-readable files (.html, .css, .csv), fully compatible with Git and external editors like VS Code.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, icon, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--4', styles.featureTile)}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <span className={styles.featureIcon}>{icon}</span>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

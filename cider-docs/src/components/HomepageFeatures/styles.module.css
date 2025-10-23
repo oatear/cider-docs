@@ -5,7 +5,14 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+/* Updated style for the new icons */
+.featureIcon {
+  font-size: 4rem; /* Make the emoji/text icons large */
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+/* Ensure the feature tiles look nice in a grid */
+.featureTile {
+  padding: 1rem;
 }
