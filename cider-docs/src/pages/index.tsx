@@ -13,15 +13,17 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+        <Heading as="h1" className={clsx("hero__title", styles.heroTitle)}>
+          <span>{siteConfig.title}</span>
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className={clsx("hero__subtitle", styles.heroSubtitle)}>
+          <span>{siteConfig.tagline}</span>
+        </p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className={clsx("button button--secondary button--lg", styles.heroButton)}
             to="/docs/quick-start-guide">
-            Quick Start Guide - 10min ⏱️
+            Quick Start Guide - 10min
           </Link>
         </div>
       </div>
