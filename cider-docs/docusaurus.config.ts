@@ -165,6 +165,13 @@ const config: Config = {
           ],
         },
       ],
+      logo: {
+        alt: 'Oatear Logo',
+        src: 'img/oatear-logo-gold-300.png',
+        href: 'https://oatear.com',
+        height: 128,
+        className: 'footer-logo',
+      },
       copyright: `Copyright © ${new Date().getFullYear()} Oatear LLC All rights reserved`,
     },
     prism: {
