@@ -15,6 +15,20 @@
   --ifm-color-primary-lighter: #F2A462; /* Even Lighter */
   --ifm-color-primary-lightest: #F5C599; /* Lightest for backgrounds/hovers */
 
+  /* --ifm-color-gray-100: #fff8f0;
+  --ifm-color-gray-200: #ffe9cc;
+  --ifm-color-gray-300: #ffd1a3;
+  --ifm-color-gray-400: #ffb880;
+  --ifm-color-gray-500: #ff9f52;
+  --ifm-color-gray-600: #e68a3a;
+  --ifm-color-gray-700: #b36b2c;
+  --ifm-color-gray-800: #804d1f;
+  --ifm-color-gray-900: #4d2e12; */
+
+  /* --ifm-background-color: #fff2dd;
+  --ifm-navbar-background-color: #ffe2ac;
+  --ifm-footer-background-color: #ffe2ac; */
+
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   /* --prism-background-color: #f5f2f0; */
@@ -42,8 +56,8 @@
   --ifm-color-primary-lightest: #dda94e;
 
   --ifm-background-color: #262c35;
-  --ifm-navbar-background-color: #262c35;
   --ifm-navbar-background-color: #313846;
+  --ifm-footer-background-color: #313846;
   
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-code-background-color: #d61b1b;

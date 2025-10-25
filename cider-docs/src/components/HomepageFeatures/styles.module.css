@@ -7,9 +7,13 @@
 
 /* Updated style for the new icons */
 .featureIcon {
-  font-size: 4rem; /* Make the emoji/text icons large */
   display: inline-block;
   margin: 1rem 0;
+}
+
+.featureIcon img {
+  width: 128px; /* Set a fixed width for the images */
+  /* width: 50%; */
 }
 
 /* Ensure the feature tiles look nice in a grid */

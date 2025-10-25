@@ -123,10 +123,10 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
+      // style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documents',
           items: [
             {
               label: 'Docs',
@@ -141,6 +141,10 @@ const config: Config = {
               label: 'Discord',
               href: 'https://discord.gg/S66xw9Wc9V',
             },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/oatear/cider',
+            },
           ],
         },
         {
@@ -151,8 +155,8 @@ const config: Config = {
             //   to: '/blog',
             // },
             {
-              label: 'GitHub',
-              href: 'https://github.com/oatear/cider',
+              label: 'Oatear',
+              href: 'https://oatear.com',
             },
             {
               label: 'Donate',

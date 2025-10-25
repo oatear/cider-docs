@@ -20,7 +20,7 @@
   border-radius: 40px 10px 50px 15px / 10px 50px 15px 40px;
 }
 
-.heroSubtitle span {
+.heroSubtitle {
   padding: 5px 10px;
   background: #fcd55d;
   color: #cc8700;

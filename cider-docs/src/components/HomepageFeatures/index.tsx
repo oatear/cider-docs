@@ -15,7 +15,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'HTML & CSS Templates',
-    icon: '💻',
+    icon: './img/cider-template.png',
     description: (
       <>
         Define your card layout with standard HTML and apply powerful, pixel-perfect styling using CSS. Say goodbye to restrictive graphical editors.
@@ -24,7 +24,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Data-Driven Design',
-    icon: '📊',
+    icon: './img/cider-data.png',
     description: (
       <>
         Separate design from content. Manage card data in a spreadsheet-like interface and use Handlebars to dynamically populate names, stats, and abilities on thousands of cards.
@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Live Preview & Visual Feedback',
-    icon: '👁️',
+    icon: './img/cider-preview.png',
     description: (
       <>
         See changes update instantly as you edit data or code. Design with confidence using the real-time preview and built-in Card Template Wizard.
@@ -42,7 +42,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Integrated Game Simulator',
-    icon: '🃏',
+    icon: './img/cider-simulator.png',
     description: (
       <>
         Quickly test your game logic with the built-in simulator. Shuffle decks, draw hands, and roll dice, all before sending a single card to the printer.
@@ -51,7 +51,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Professional Exports',
-    icon: '🖨️',
+    icon: './img/cider-export.png',
     description: (
       <>
         Generate print-ready PDF sheets with crop marks or export individual high-resolution PNGs. Includes specialized export options for Tabletop Simulator.
@@ -60,7 +60,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Open File Structure',
-    icon: '📁',
+    icon: './img/cider-folder.png',
     description: (
       <>
         Your entire project is saved as a clean folder of human-readable files (.html, .css, .csv), fully compatible with Git and external editors like VS Code.
@@ -73,7 +73,9 @@ function Feature({title, icon, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4', styles.featureTile)}>
       <div className="text--center">
-        <span className={styles.featureIcon}>{icon}</span>
+        <span className={styles.featureIcon}>
+          <img src={ icon }></img>
+        </span>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
